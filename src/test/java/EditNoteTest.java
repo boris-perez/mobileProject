@@ -1,5 +1,5 @@
-import Activity.toDo.AddNewNote;
-import Activity.toDo.MainPage;
+import Activity.toDoApp.AddNewNote;
+import Activity.toDoApp.MainPage;
 import SessionManager.Session;
 import org.junit.After;
 import org.junit.Assert;
