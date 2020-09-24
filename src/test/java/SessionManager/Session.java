@@ -11,7 +11,7 @@ import java.net.MalformedURLException;
 
 public class Session {
 
-    private static Session session=null;
+    private static Session session = null;
     private AppiumDriver driver;
 
     private Session() throws MalformedURLException {
@@ -19,18 +19,18 @@ public class Session {
     }
 
     public static Session getInstance() throws MalformedURLException {
-        if(session==null)
-            session=new Session();
+        if (session == null)
+            session = new Session();
 
         return session;
     }
 
     public void closeSession() {
         driver.quit();
-        session=null;
+        session = null;
     }
 
-    public AppiumDriver getDriver(){
+    public AppiumDriver getDriver() {
         return driver;
     }
 }
