@@ -11,12 +11,12 @@ public class Control {
     protected WebElement control;
     protected By locator;
 
-    public Control(By locator){
-        this.locator=locator;
+    public Control(By locator) {
+        this.locator = locator;
     }
 
     public void findControl() throws MalformedURLException {
-        this.control= Session.getInstance().getDriver().findElement(this.locator);
+        this.control = Session.getInstance().getDriver().findElement(this.locator);
     }
 
     public void click() throws MalformedURLException {
@@ -29,11 +29,11 @@ public class Control {
         return this.control.getText();
     }
 
-    public boolean isDisplayed(){
-        try{
+    public boolean isDisplayed() {
+        try {
             this.findControl();
             return this.control.isDisplayed();
-        }catch (Exception e){
+        } catch (Exception e) {
             return false;
         }
 

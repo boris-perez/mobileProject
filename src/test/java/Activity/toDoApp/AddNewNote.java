@@ -1,4 +1,4 @@
-package Activity.toDo;
+package Activity.toDoApp;
 
 import appiumControl.Button;
 import appiumControl.TextBox;
