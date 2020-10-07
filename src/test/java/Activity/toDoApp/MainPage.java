@@ -9,11 +9,11 @@ import org.openqa.selenium.By;
  **/
 public class MainPage {
 
-    public Button addNoteButton;
-    public Label noteSaved;
+    public Button AddNoteButton;
+    public Label NoteSaved;
 
     public MainPage() {
-        addNoteButton = new Button(By.id("com.vrproductiveapps.whendo:id/fab"));
-        noteSaved = new Label(By.id("com.vrproductiveapps.whendo:id/home_list_item_text"));
+        AddNoteButton = new Button(By.id("com.vrproductiveapps.whendo:id/fab"));
+        NoteSaved = new Label(By.id("com.vrproductiveapps.whendo:id/home_list_item_text"));
     }
 }

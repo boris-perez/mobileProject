@@ -14,8 +14,19 @@ public class Android implements IDevice {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("deviceName", "Boris");
         capabilities.setCapability("platformVersion", "10");
-        capabilities.setCapability("appPackage", "com.vrproductiveapps.whendo");
-        capabilities.setCapability("appActivity", ".ui.HomeActivity");
+
+        //Calendar
+//        capabilities.setCapability("appPackage", "com.simplemobiletools.calendar");
+//        capabilities.setCapability("appActivity", ".activities.MainActivity");
+
+//        //Alarm
+//        capabilities.setCapability("appPackage", "com.apalon.myclockfree");
+//        capabilities.setCapability("appActivity", ".activity.MainAdsActivity");
+
+        //My Contact
+        capabilities.setCapability("appPackage", "com.kevinrmendez.contact_app");
+        capabilities.setCapability("appActivity", ".MainActivity");
+
         capabilities.setCapability("platformName", "Android");
 
         AppiumDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
