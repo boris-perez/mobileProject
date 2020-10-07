@@ -9,11 +9,13 @@ import org.openqa.selenium.By;
  **/
 public class MainPage {
 
-    public Button addNoteButton;
-    public Label noteSaved;
+    public Button Search;
+    public Button AddCalendar;
+    public Button SaveNote;
 
     public MainPage() {
-        addNoteButton = new Button(By.id("com.vrproductiveapps.whendo:id/fab"));
-        noteSaved = new Label(By.id("com.vrproductiveapps.whendo:id/home_list_item_text"));
+        Search = new Button(By.id("com.simplemobiletools.calendar:id/search"));
+        AddCalendar = new Button(By.id("com.simplemobiletools.calendar:id/calendar_fab"));
+        SaveNote = new Button(By.id("com.vrproductiveapps.whendo:id/saveItem"));
     }
 }

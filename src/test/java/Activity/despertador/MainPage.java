@@ -9,11 +9,17 @@ import org.openqa.selenium.By;
  **/
 public class MainPage {
 
-    public Button addNoteButton;
-    public Label noteSaved;
+    public Button SecondAlert;
+    public Button FirstAlert;
+    public Button NewAlarm;
+    public Button MainPage;
+    public Label AlarmNotes;
 
     public MainPage() {
-        addNoteButton = new Button(By.id("com.vrproductiveapps.whendo:id/fab"));
-        noteSaved = new Label(By.id("com.vrproductiveapps.whendo:id/home_list_item_text"));
+        FirstAlert = new Button(By.id("com.apalon.myclockfree:id/positive_btn"));
+        SecondAlert = new Button(By.id("com.android.permissioncontroller:id/permission_allow_foreground_only_button"));
+        NewAlarm = new Button(By.id("com.apalon.myclockfree:id/openAlarmsButton"));
+        MainPage = new Button(By.id("com.apalon.myclockfree:id/clockSV"));
+        AlarmNotes = new Label(By.id("com.apalon.myclockfree:id/alarmNotes"));
     }
 }
